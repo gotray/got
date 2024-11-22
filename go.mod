@@ -1,6 +1,8 @@
 module github.com/gotray/got
 
-go 1.23.3
+go 1.21
+
+toolchain go1.23.3
 
 require (
 	github.com/fatih/color v1.18.0
