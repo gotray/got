@@ -54,7 +54,7 @@ func installGoDeps(projectPath string) error {
 	}()
 
 	fmt.Println("Installing Go dependencies...")
-	getCmd := exec.Command("go", "get", "-u", "github.com/gotray/got")
+	getCmd := exec.Command("go", "mod", "tidy")
 	getCmd.Stdout = os.Stdout
 	getCmd.Stderr = os.Stderr
 	if err := getCmd.Run(); err != nil {

@@ -22,7 +22,7 @@ func getCacheDir() (string, error) {
 	if err != nil {
 		return "", fmt.Errorf("failed to get user home directory: %v", err)
 	}
-	cacheDir := filepath.Join(homeDir, ".gopy", "cache")
+	cacheDir := filepath.Join(homeDir, ".got", "cache")
 	if err := os.MkdirAll(cacheDir, 0755); err != nil {
 		return "", fmt.Errorf("failed to create cache directory: %v", err)
 	}

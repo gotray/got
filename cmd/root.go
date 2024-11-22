@@ -11,9 +11,9 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "gopy",
+	Use:   "got",
 	Short: "A tool for building Go applications with Python integration",
-	Long: `gopy is a command line tool that helps you build, run and manage Go applications
+	Long: `got is a command line tool that helps you build, run and manage Go applications
 that integrate with Python.
 
 It provides commands to:
@@ -23,7 +23,7 @@ It provides commands to:
 - Install Go packages with Python dependencies
 - Add or remove Python packages to/from your project
 
-Use "gopy help [command]" for more information about a command.`,
+Use "got help [command]" for more information about a command.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
