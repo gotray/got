@@ -7,3 +7,22 @@ Features:
 - Create a project with Go and Python environment configured
 - Build, run, install Go packages with Python environment configured
 - Compatible with Windows, Linux, MacOS
+
+## Installation
+
+```bash
+go install github.com/gotray/got/cmd/got@latest
+```
+
+## Initialize a project
+
+```bash
+got init myproject
+cd myproject
+```
+
+## Run project
+
+```bash
+got run .
+```
