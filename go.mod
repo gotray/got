@@ -4,7 +4,6 @@ go 1.23.3
 
 require (
 	github.com/fatih/color v1.18.0
-	github.com/gotray/go-python v0.3.0
 	github.com/klauspost/compress v1.17.11
 	github.com/spf13/cobra v1.8.1
 	go.uber.org/zap v1.27.0

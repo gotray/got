@@ -54,10 +54,10 @@ var initCmd = &cobra.Command{
 If no path is provided, it will initialize in the current directory.
 
 Example:
-  gopy init
-  gopy init my-project
-  gopy init --debug my-project
-  gopy init -v my-project`,
+  got init
+  got init my-project
+  got init --debug my-project
+  got init -v my-project`,
 	Run: func(cmd *cobra.Command, args []string) {
 		// Get project path
 		projectPath := "."
@@ -111,7 +111,7 @@ Example:
 		fmt.Printf("\n%s\n", bold("Successfully initialized go-python project in "+projectPath))
 		fmt.Println("\nNext steps:")
 		fmt.Println("1. cd", projectPath)
-		fmt.Println("2. gopy run .")
+		fmt.Println("2. got run .")
 	},
 }
 

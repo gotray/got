@@ -12,7 +12,7 @@ import (
 	"github.com/fatih/color"
 )
 
-//go:embed templates/*
+//go:embed _templates/*
 var templates embed.FS
 
 var (
@@ -52,18 +52,18 @@ func Project(projectPath string, verbose bool) error {
 	overwriteAll := false
 
 	// Walk through template files and copy them
-	err := fs.WalkDir(templates, "templates", func(path string, d fs.DirEntry, err error) error {
+	err := fs.WalkDir(templates, "_templates", func(path string, d fs.DirEntry, err error) error {
 		if err != nil {
 			return err
 		}
 
 		// Skip the templates root directory
-		if path == "templates" {
+		if path == "_templates" {
 			return nil
 		}
 
 		// Get relative path from templates directory
-		relPath, err := filepath.Rel("templates", path)
+		relPath, err := filepath.Rel("_templates", path)
 		if err != nil {
 			return err
 		}

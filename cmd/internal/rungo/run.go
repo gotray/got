@@ -76,7 +76,7 @@ func FindProjectRoot(dir string) (string, error) {
 	}
 	parentDir := filepath.Dir(dir)
 	if parentDir == dir {
-		return "", fmt.Errorf("failed to find Gopy project")
+		return "", fmt.Errorf("failed to find Got project")
 	}
 	return FindProjectRoot(parentDir)
 }
@@ -89,7 +89,7 @@ func RunCommand(command string, args []string) error {
 	}
 	projectRoot, err := FindProjectRoot(wd)
 	if err != nil {
-		return fmt.Errorf("should run this command in a Gopy project: %v", err)
+		return fmt.Errorf("should run this command in a Got project: %v", err)
 	}
 	env.SetBuildEnv(projectRoot)
 

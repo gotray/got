@@ -9,7 +9,7 @@ import (
 // setupTestDir creates a temporary directory for testing
 func setupTestDir(t *testing.T) string {
 	t.Helper()
-	dir, err := os.MkdirTemp("", "gopy-test-*")
+	dir, err := os.MkdirTemp("", "got-test-*")
 	if err != nil {
 		t.Fatalf("failed to create temp dir: %v", err)
 	}

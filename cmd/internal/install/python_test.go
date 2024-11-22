@@ -144,7 +144,7 @@ func TestGetCacheDir(t *testing.T) {
 			return
 		}
 
-		want := filepath.Join(tmpDir, ".gopy", "cache")
+		want := filepath.Join(tmpDir, ".got", "cache")
 		if got != want {
 			t.Errorf("getCacheDir() = %v, want %v", got, want)
 		}
