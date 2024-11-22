@@ -4,9 +4,9 @@ A tool to run Go with Python environment configured.
 
 [![Build Status](https://github.com/gotray/got/actions/workflows/go.yml/badge.svg)](https://github.com/gotray/got/actions/workflows/go.yml)
 [![codecov](https://codecov.io/github/gotray/got/graph/badge.svg?token=V0ns2Rzmop)](https://codecov.io/github/gotray/got)
-![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/cpunion/got)
-[![GitHub commits](https://badgen.net/github/commits/cpunion/got)](https://GitHub.com/Naereen/cpunion/got/commit/)
-[![GitHub release](https://img.shields.io/github/v/tag/cpunion/got.svg?label=release)](https://github.com/gotray/got/releases)
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gotray/got)
+[![GitHub commits](https://badgen.net/github/commits/gotray/got)](https://GitHub.com/Naereen/gotray/got/commit/)
+[![GitHub release](https://img.shields.io/github/v/tag/gotray/got.svg?label=release)](https://github.com/gotray/got/releases)
 [![Go Report Card](https://goreportcard.com/badge/github.com/gotray/got)](https://goreportcard.com/report/github.com/gotray/got)
 [![Go Reference](https://pkg.go.dev/badge/github.com/gotray/got.svg)](https://pkg.go.dev/github.com/gotray/got)
 
